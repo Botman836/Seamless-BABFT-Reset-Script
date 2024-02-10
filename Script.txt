@@ -1,0 +1,34 @@
+#Persistent
+
+F6::
+Toggle := !Toggle
+If (Toggle)
+{
+    SetTimer, SendKeys, 120000
+    GoSub, SendKeys
+}
+Else
+{
+    SetTimer, SendKeys, Off
+}
+Return
+
+SendKeys:
+WinActivate, ahk_exe RobloxPlayerBeta.exe
+Sleep 500
+Send {esc}
+Sleep 1000
+Send {r}
+Sleep 1000
+Send {enter}
+Sleep 1000
+Send {Alt down}{Tab}
+Sleep 1000
+Send {Alt up}
+Return
+
+F7::
+Toggle := false
+SetTimer, SendKeys, Off
+ExitApp
+Return
