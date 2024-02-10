@@ -1,4 +1,4 @@
-A seamless BABFT script, designed to make resetting as painless as possible.
+A seamless BABFT script, designed to make resetting as painless as possible, while bypassing the roblox afk timer.
 # How to setup
 
 1: Install Autohotkey
